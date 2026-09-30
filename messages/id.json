@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "Artha Restu — Website, Aplikasi Mobile & Video AI",
+    "description": "Portofolio Artha Restu, freelancer di Yogyakarta: website, aplikasi mobile, dan video AI untuk brand di Indonesia dan luar negeri.",
+    "ogTagline": "Website · Aplikasi Mobile · Video AI"
+  },
+  "common": {
+    "skip": "Lewati ke konten",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Halo Artha, saya melihat portofolio Anda di artharestu.com dan ingin berdiskusi tentang proyek.",
+    "newTab": "(membuka tab baru)"
+  },
+  "nav": {
+    "label": "Navigasi utama",
+    "home": "Artha Restu, ke atas",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "about": "Tentang",
+    "menuOpen": "Buka menu",
+    "menuClose": "Tutup menu",
+    "language": "Bahasa",
+    "switchTo": "Ganti ke bahasa Inggris",
+    "themeToDark": "Ganti ke tema gelap",
+    "themeToLight": "Ganti ke tema terang"
+  },
+  "hero": {
+    "label": "Freelancer · Yogyakarta, Indonesia",
+    "title": "Saya membangun website, aplikasi, dan video AI.",
+    "sub": "Developer web dengan 12+ tahun pengalaman. Kini juga memproduksi video dengan AI untuk brand lokal dan internasional.",
+    "cta": "Lihat karya",
+    "scroll": "Scroll"
+  },
+  "services": {
+    "label": "Layanan",
+    "title": "Yang saya kerjakan",
+    "cta": "Lihat karya",
+    "items": {
+      "web": {
+        "title": "Website",
+        "text": "Company profile, landing page, sampai web app yang cepat dan mudah dikelola.",
+        "points": [
+          "Desain responsif",
+          "Next.js & SEO dasar",
+          "Deploy ke domain Anda"
+        ]
+      },
+      "mobile": {
+        "title": "Aplikasi Mobile",
+        "text": "Aplikasi Android dan iOS dari prototipe sampai rilis.",
+        "points": [
+          "UI yang nyaman di tangan",
+          "Satu kode untuk dua platform",
+          "Bantuan rilis ke store"
+        ]
+      },
+      "video": {
+        "title": "Video AI",
+        "text": "Iklan produk, film brand, dan konten UGC yang diproduksi dengan AI.",
+        "points": [
+          "Format vertikal & horizontal",
+          "Naskah sampai edit akhir",
+          "Siap untuk Reels, TikTok, YouTube"
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "label": "Portofolio",
+    "title": "Karya pilihan",
+    "filterLabel": "Filter kategori",
+    "filters": {
+      "all": "Semua",
+      "web": "Website",
+      "mobile": "Aplikasi Mobile",
+      "video": "Video AI"
+    },
+    "categories": {
+      "web": "Website",
+      "mobile": "Aplikasi Mobile",
+      "video": "Video AI"
+    },
+    "vertical": "Vertikal",
+    "view": "Lihat",
+    "open": "Buka detail {title}",
+    "emptyTitle": "Belum ada karya di kategori ini",
+    "emptyText": "Karya baru sedang disiapkan. Coba lihat kategori lain.",
+    "emptyCta": "Lihat semua",
+    "imageAlt": "{title} — {category}, gambar {n}"
+  },
+  "modal": {
+    "close": "Tutup",
+    "prev": "Proyek sebelumnya",
+    "next": "Proyek berikutnya",
+    "prevImage": "Gambar sebelumnya",
+    "nextImage": "Gambar berikutnya",
+    "goToImage": "Ke gambar {n}",
+    "role": "Peran",
+    "year": "Tahun",
+    "tags": "Tag",
+    "visit": "Kunjungi situs",
+    "code": "Lihat kode",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "demo": "Demo",
+    "youtube": "Tonton di YouTube",
+    "copy": "Salin tautan",
+    "copied": "Tautan disalin",
+    "copyFailed": "Gagal menyalin. Salin dari address bar.",
+    "videoSoonTitle": "Video sedang disiapkan",
+    "videoSoonText": "Pratinjau untuk proyek ini segera hadir.",
+    "videoFailed": "Video tidak bisa diputar di sini.",
+    "counter": "{current} dari {total}"
+  },
+  "about": {
+    "label": "Tentang",
+    "title": "Tentang saya",
+    "bio": "Saya Artha Restu, lulusan Teknik Informatika dengan 12+ tahun pengalaman membangun website. Selain website dan aplikasi, saya memproduksi video dengan AI untuk brand dan kreator. Saya bekerja dari Yogyakarta untuk klien di Indonesia dan luar negeri.",
+    "photoAlt": "Foto Artha Restu",
+    "location": "Yogyakarta, Indonesia",
+    "stats": {
+      "years": {
+        "value": "12+",
+        "label": "tahun menulis kode"
+      },
+      "fields": {
+        "value": "3",
+        "label": "bidang layanan"
+      },
+      "clients": {
+        "value": "Global",
+        "label": "klien lokal & internasional"
+      }
+    },
+    "toolsLabel": "Tool & stack"
+  },
+  "contact": {
+    "title": "Punya proyek? Mari bicara.",
+    "sub": "Ceritakan ide Anda lewat WhatsApp. Satu pesan sudah cukup untuk memulai.",
+    "cta": "Chat WhatsApp"
+  },
+  "footer": {
+    "copyright": "© 2026 Artha Restu",
+    "top": "Kembali ke atas"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "text": "Mungkin tautannya sudah berubah.",
+    "cta": "Kembali ke beranda"
+  }
+}

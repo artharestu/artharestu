@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "title": "Artha Restu — Websites, Mobile Apps & AI Video",
+    "description": "Portfolio of Artha Restu, a Yogyakarta-based freelancer building websites, mobile apps, and AI video for brands in Indonesia and abroad.",
+    "ogTagline": "Websites · Mobile Apps · AI Video"
+  },
+  "common": {
+    "skip": "Skip to content",
+    "whatsapp": "WhatsApp",
+    "whatsappMessage": "Hi Artha, I saw your portfolio at artharestu.com and would like to discuss a project.",
+    "newTab": "(opens in a new tab)"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "home": "Artha Restu, back to top",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "language": "Language",
+    "switchTo": "Switch to Indonesian",
+    "themeToDark": "Switch to dark theme",
+    "themeToLight": "Switch to light theme"
+  },
+  "hero": {
+    "label": "Freelancer · Yogyakarta, Indonesia",
+    "title": "I build websites, apps, and AI videos.",
+    "sub": "Web developer with 12+ years of experience, now also producing AI video for brands in Indonesia and abroad.",
+    "cta": "See work",
+    "scroll": "Scroll"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What I do",
+    "cta": "See work",
+    "items": {
+      "web": {
+        "title": "Websites",
+        "text": "Company profiles, landing pages, and web apps that load fast and stay easy to manage.",
+        "points": [
+          "Responsive design",
+          "Next.js & core SEO",
+          "Deployed to your domain"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "text": "Android and iOS apps from prototype to launch.",
+        "points": [
+          "Thumb-friendly UI",
+          "One codebase, two platforms",
+          "Store release support"
+        ]
+      },
+      "video": {
+        "title": "AI Video",
+        "text": "Product ads, brand films, and UGC content produced with AI.",
+        "points": [
+          "Vertical & horizontal formats",
+          "Script to final cut",
+          "Ready for Reels, TikTok, YouTube"
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Selected work",
+    "filterLabel": "Filter by category",
+    "filters": {
+      "all": "All",
+      "web": "Websites",
+      "mobile": "Mobile Apps",
+      "video": "AI Video"
+    },
+    "categories": {
+      "web": "Website",
+      "mobile": "Mobile App",
+      "video": "AI Video"
+    },
+    "vertical": "Vertical",
+    "view": "View",
+    "open": "Open details for {title}",
+    "emptyTitle": "Nothing here yet",
+    "emptyText": "New work is on the way. Try another category.",
+    "emptyCta": "See all",
+    "imageAlt": "{title} — {category}, image {n}"
+  },
+  "modal": {
+    "close": "Close",
+    "prev": "Previous project",
+    "next": "Next project",
+    "prevImage": "Previous image",
+    "nextImage": "Next image",
+    "goToImage": "Go to image {n}",
+    "role": "Role",
+    "year": "Year",
+    "tags": "Tags",
+    "visit": "Visit site",
+    "code": "View code",
+    "playStore": "Google Play",
+    "appStore": "App Store",
+    "demo": "Demo",
+    "youtube": "Watch on YouTube",
+    "copy": "Copy link",
+    "copied": "Link copied",
+    "copyFailed": "Couldn't copy. Use the address bar instead.",
+    "videoSoonTitle": "Video coming soon",
+    "videoSoonText": "A preview for this project is on the way.",
+    "videoFailed": "This video can't play here.",
+    "counter": "{current} of {total}"
+  },
+  "about": {
+    "label": "About",
+    "title": "About me",
+    "bio": "I'm Artha Restu, an informatics engineering graduate with 12+ years of experience building websites. Beyond websites and apps, I produce AI video for brands and creators. I work from Yogyakarta with clients in Indonesia and abroad.",
+    "photoAlt": "Photo of Artha Restu",
+    "location": "Yogyakarta, Indonesia",
+    "stats": {
+      "years": {
+        "value": "12+",
+        "label": "years writing code"
+      },
+      "fields": {
+        "value": "3",
+        "label": "service areas"
+      },
+      "clients": {
+        "value": "Global",
+        "label": "local & international clients"
+      }
+    },
+    "toolsLabel": "Tools & stack"
+  },
+  "contact": {
+    "title": "Got a project? Let's talk.",
+    "sub": "Tell me about your idea on WhatsApp. One message is enough to start.",
+    "cta": "Chat on WhatsApp"
+  },
+  "footer": {
+    "copyright": "© 2026 Artha Restu",
+    "top": "Back to top"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The link may have changed.",
+    "cta": "Back to home"
+  }
+}

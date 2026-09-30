@@ -4,7 +4,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 import { useLocale, useTranslations } from "next-intl";
 import type { Category } from "@/data/categories";
 import type { Project } from "@/data/schema";
-import { FILTER_EVENT, type FilterEventDetail } from "@/lib/events";
+import { FILTER_EVENT, OPEN_EVENT, type FilterEventDetail, type OpenEventDetail } from "@/lib/events";
 import dynamic from "next/dynamic";
 import type { Flip } from "gsap/Flip";
 import { gsap, getFlip, loadFlip, useGSAP, isFinePointer, prefersReducedMotion } from "@/lib/motion";
@@ -123,6 +123,18 @@ export function Portfolio({ projects }: { projects: Project[] }) {
     setModalSlug(slug);
     setModalOpen(true);
   }, []);
+
+  // The hero showcase opens projects through the same path as the cards.
+  useEffect(() => {
+    const onOpen = (e: Event) => {
+      const { slug, trigger } = (e as CustomEvent<OpenEventDetail>).detail;
+      if (!bySlug.has(slug)) return;
+      e.preventDefault();
+      openProject(slug, trigger);
+    };
+    window.addEventListener(OPEN_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_EVENT, onOpen);
+  }, [bySlug, openProject]);
 
   const requestClose = useCallback(() => {
     if (pushedRef.current) {

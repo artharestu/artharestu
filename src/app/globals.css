@@ -275,11 +275,54 @@
       transform: translateX(-50%);
     }
   }
+
+  /* ——— Hero showcase ——— */
+  .hero-kw {
+    text-decoration-line: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.14em;
+    transition: text-decoration-color 300ms var(--ease-out);
+  }
+  .hero-kw[data-active] {
+    text-decoration-color: var(--accent-text);
+  }
+  /* Sized from --sh, the outer height of the tallest frame (phone / vertical video). The stage is as
+     wide as the website frame (80% of that height at 16:10); 58px holds the caption and progress bar. */
+  .showcase {
+    --sh: 260px;
+    position: relative;
+    width: min(100%, calc((var(--sh) * 0.8 - 14px) * 1.6 + 14px));
+    height: calc(var(--sh) + 58px);
+  }
+  @media (min-width: 768px) {
+    .showcase {
+      --sh: 280px;
+    }
+  }
+  /* ≥ 1024px the script sets --sh and --st (top) to fit beside or below the title. */
+  @media (min-width: 1024px) {
+    .showcase {
+      --sh: 300px;
+      position: absolute;
+      top: var(--st, 0px);
+      right: 0;
+    }
+  }
+  .showcase-frame {
+    box-sizing: content-box;
+    width: calc(100% - 14px);
+    aspect-ratio: 16 / 10;
+  }
 }
 
 /* ——— Hero: hidden only when JS is running (html.js), so no-JS keeps text visible ——— */
 html.js:not(.anim-done) [data-hero-fade],
 html.js:not(.anim-done) [data-hero-title] {
+  visibility: hidden;
+}
+/* The showcase only loops with JS; without it, scene 1 stays still and needs no controls. */
+html:not(.js) [data-showcase-controls] {
   visibility: hidden;
 }
 
@@ -303,6 +346,9 @@ html.js:not(.anim-done) [data-hero-title] {
   }
   .blob {
     display: none;
+  }
+  [data-showcase-controls] {
+    visibility: hidden;
   }
   *,
   *::before,

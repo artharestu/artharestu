@@ -90,6 +90,8 @@ Maksimal tiga bobot font dalam satu layar, dan hanya ini: 600 (display), 500 (ju
 - **Navigasi:** navbar glass mengambang di atas (jarak 16px dari tepi atas), lebar mengikuti kontainer 1280px, radius 16px.
 - **Perataan:** semua judul dan teks rata kiri, termasuk hero. Rata tengah hanya untuk state kosong dan halaman 404.
 - **Hero:** tinggi minimal `100svh`. Label mono di atas, judul besar mengisi 10 dari 12 kolom, subjudul maks. 56ch, tombol di bawahnya. Indikator scroll di pojok kiri bawah.
+  - Bingkai showcase (lihat §6), ≥ 1024px: rata kanan di kolom 8–12. Letaknya di samping baris terakhir judul bila baris itu berakhir minimal 48px sebelum bingkai; selain itu di bawah judul, sejajar subjudul. Tepi bawahnya maksimal sejajar indikator scroll, dan tinggi bingkai tertinggi (HP/video vertikal) 260–340px.
+  - < 1024px: di bawah tombol, rata kiri, tinggi bingkai tertinggi 260px (280px di ≥ 768px). Lebar area showcase sama dengan lebar bingkai website.
 - **Heading section:** label mono berformat `(01) LAYANAN`, `(02) PORTOFOLIO`, `(03) TENTANG`, lalu judul display di bawahnya.
 - **Layanan:** 3 kartu glass sejajar (≥ 1024px), bertumpuk di bawahnya.
 - **Portofolio:** tab filter di atas grid (bar yang bisa di-scroll horizontal di HP). Grid 3 kolom (≥ 1024px), 2 kolom (≥ 640px), 1 kolom (< 640px), gap 24px.
@@ -102,7 +104,17 @@ Maksimal tiga bobot font dalam satu layar, dan hanya ini: 600 (display), 500 (ju
 
 Kurva default: `power3.out` (GSAP) / `cubic-bezier(0.22, 1, 0.36, 1)` (CSS). Durasi: mikro 150–200ms, UI 250–450ms, reveal 500–700ms.
 
-- **Hero saat dimuat:** judul dipecah per kata dengan SplitText, tiap kata naik dari `yPercent: 100` di dalam mask, 700ms, stagger 40ms. Label, subjudul, dan tombol fade + naik 16px setelahnya. Berjalan sekali.
+- **Hero saat dimuat:** judul dipecah per kata dengan SplitText, tiap kata naik dari `yPercent: 100` di dalam mask, 700ms, stagger 40ms. Label, subjudul, tombol, dan bingkai showcase fade + naik 16px setelahnya. Berjalan sekali.
+- **Motion graphic hero (bingkai showcase):** satu bingkai bergaya bingkai HP di galeri modal (radius 16/12, border `--line`, bezel `#0A0A0C`, bukan glass) yang bergantian menampilkan satu karya per kategori, urut Website → Aplikasi Mobile → Video AI. Karya yang dipakai adalah yang `featured`; bila tidak ada, yang terbaru. Bentuk bingkai mengikuti rasio karyanya: 16:10, 9:19.5, lalu 9:16 atau 16:9. Di atas bingkai ada label mono `(01) WEBSITE · KOPI LERENG`, tiga segmen progres 2px (`--accent-text`), dan tombol jeda/putar 32px.
+  - Tiap adegan 4,4 detik. Saat ganti adegan: ukuran bingkai berubah 900ms `power3.inOut`, label bergulir di dalam mask 450ms, isi lama fade 250ms, isi baru fade 300ms.
+  - Website: wireframe bergaris `--accent-text` tergambar sendiri (DrawSVG, stagger 50ms), lalu screenshot fade + `scale 1.03 → 1` 600ms.
+  - Aplikasi Mobile: layar pertama naik 6% + fade; di detik 2,4 bergeser ke layar kedua (700ms `power3.inOut`) bila ada.
+  - Video AI: noise piksel 12×21 berubah menjadi versi piksel dari cover, lalu gambar tajam (kanvas fade 600ms). Cover zoom pelan `1.12 → 1` linier. Tidak ada file video yang diputar.
+  - Kata di judul yang sesuai adegan diberi garis bawah `--accent-text` (tebal 0.05em, jarak 0.14em, transisi 300ms).
+  - Mulai 200ms setelah animasi judul selesai. Putaran pertama hanya menahan adegan 1 (sudah tampil), tanpa membangunnya ulang. Hanya satu hal yang bergerak dalam satu waktu.
+  - Berhenti saat tombol jeda ditekan, saat di-hover (`pointer: fine`), saat bingkai fokus lewat keyboard, saat hero di luar layar, dan saat tab tidak aktif.
+  - Klik bingkai → Modal Proyek karya yang sedang tampil, lewat jalur yang sama dengan kartu (`?project=<slug>`, fokus kembali ke bingkai saat modal ditutup). Hover: border `--accent` 40%.
+  - Tanpa JavaScript dan saat reduced motion: bingkai diam di adegan 1, tanpa garis bawah, tanpa segmen progres dan tombol jeda.
 - **Reveal saat scroll:** judul section dan kartu fade + naik 24px, 600ms, stagger 80ms untuk kartu, dipicu saat elemen mencapai 85% tinggi viewport, sekali saja.
 - **Hover kartu portofolio (pointer: fine):** cover `scale(1.04)` 500ms; border berubah ke `--accent` 40% opasitas; panah ↗ bergeser 4px ke kanan atas. Kartu video: ikon play membesar 1.1×.
 - **Label kursor (F19):** lingkaran 72px berwarna `--accent` dengan teks "Lihat"/"View" mengikuti kursor (lerp 0.15) hanya di atas kartu portofolio. Kursor sistem tidak diganti di tempat lain.
@@ -167,7 +179,7 @@ Bawaan:
 - Label "AI-powered" atau sejenisnya
 - Bobot font di luar 400 / 500 / 600, atau lebih dari tiga bobot dalam satu layar
 - Ikon dan teks yang menyampaikan hal sama persis berdampingan
-- Animasi pada elemen yang tidak sedang berubah status (kecuali blob latar dan marquee)
+- Animasi pada elemen yang tidak sedang berubah status (kecuali blob latar, marquee, dan bingkai showcase di hero)
 - Halaman kosong tanpa penjelasan langkah berikutnya
 
 Khusus situs ini:

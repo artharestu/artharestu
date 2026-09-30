@@ -12,6 +12,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// The hero title marks its keywords for the site's underline; the OG image shows them as plain text.
+const plain = (chunks: string) => chunks;
+
 const fonts = Promise.all([
   readFile(join(process.cwd(), "assets/fonts/Unbounded.ttf")),
   readFile(join(process.cwd(), "assets/fonts/Geist.ttf")),
@@ -55,7 +58,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           <span style={{ color: "#C8FF3D" }}>ARTHARESTU.COM</span>
         </div>
         <div style={{ display: "flex", fontFamily: "Unbounded", fontSize: 76, lineHeight: 1.02, letterSpacing: -2, maxWidth: 1000 }}>
-          {t("title")}
+          {t.markup("title", { web: plain, mobile: plain, video: plain })}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 20, fontSize: 28, color: "#8A8A93" }}>
           <div style={{ width: 14, height: 14, borderRadius: 9999, background: "#C8FF3D" }} />

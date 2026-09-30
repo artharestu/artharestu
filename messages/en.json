@@ -25,10 +25,12 @@
   },
   "hero": {
     "label": "Freelancer · Yogyakarta, Indonesia",
-    "title": "I build websites, apps, and AI videos.",
+    "title": "I build <web>websites</web>, <mobile>apps</mobile>, and <video>AI videos</video>.",
     "sub": "Web developer with 12+ years of experience, now also producing AI video for brands in Indonesia and abroad.",
     "cta": "See work",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "pause": "Pause animation",
+    "play": "Play animation"
   },
   "services": {
     "label": "Services",

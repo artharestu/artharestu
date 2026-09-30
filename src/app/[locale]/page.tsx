@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { projects } from "@/data/projects";
+import { getShowcase } from "@/data/showcase";
 import { OWNER_NAME, SITE_URL } from "@/lib/site";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
@@ -28,7 +29,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <Hero />
+      <Hero showcase={getShowcase(projects)} />
       <Services />
       <section id="portfolio" aria-labelledby="portfolio-title" className="section-y scroll-mt-20">
         <div className="container-x">

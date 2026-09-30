@@ -67,8 +67,8 @@ Pengunjung bisa membuka satu karya dan melihat preview-nya dalam ukuran besar (s
 
 ### Hero
 - **Tujuan:** menjelaskan dalam 5 detik siapa Artha dan apa yang dikerjakannya.
-- **Isi:** label kecil mono ("Freelancer · Yogyakarta, Indonesia"), judul besar, subjudul 1–2 kalimat, tombol "Lihat karya" / "See work", indikator scroll.
-- **Aksi tersedia:** "Lihat karya" → smooth scroll ke Portofolio.
+- **Isi:** label kecil mono ("Freelancer · Yogyakarta, Indonesia"), judul besar, subjudul 1–2 kalimat, tombol "Lihat karya" / "See work", indikator scroll, dan bingkai showcase yang bergantian menampilkan satu karya unggulan per kategori (lihat `DESIGN-BRIEF.md` §5 dan §6).
+- **Aksi tersedia:** "Lihat karya" → smooth scroll ke Portofolio. Klik bingkai showcase → Modal Proyek karya yang sedang tampil. Tombol jeda/putar → menghentikan atau melanjutkan animasi bingkai.
 - **Teks:** lihat `DESIGN-BRIEF.md` §7.
 - **Saat kosong / memuat / gagal / tanpa akses:** tidak berlaku. Teks harus terlihat walau JavaScript gagal dimuat (state awal animasi tidak boleh `opacity: 0` di HTML server).
 
@@ -132,13 +132,14 @@ Pengunjung bisa membuka satu karya dan melihat preview-nya dalam ukuran besar (s
 | F11 | Iframe YouTube hanya dibuat saat modal video terbuka dan dihapus dari DOM saat modal ditutup (audio berhenti) | Must |
 | F12 | Kartu video memakai thumbnail YouTube otomatis kecuali field `cover` diisi | Must |
 | F13 | Tombol WhatsApp hanya muncul di navbar (termasuk menu mobile) dan section Ajakan kontak, dengan pesan pembuka sesuai locale | Must |
-| F14 | Saat `prefers-reduced-motion: reduce`, Lenis, animasi reveal, SplitText, marquee, dan blob latar dimatikan; konten langsung terlihat | Must |
+| F14 | Saat `prefers-reduced-motion: reduce`, Lenis, animasi reveal, SplitText, marquee, blob latar, dan loop bingkai showcase hero dimatikan; konten langsung terlihat | Must |
 | F15 | Konten tetap terbaca bila JavaScript gagal dimuat (HTML server berisi teks lengkap dalam keadaan terlihat) | Must |
 | F16 | "Lihat karya →" di kartu layanan men-scroll ke Portofolio dan mengaktifkan filter kategori terkait | Should |
 | F17 | Tombol sebelumnya/berikutnya dan tombol panah keyboard di modal berpindah proyek sesuai filter aktif | Should |
 | F18 | "Salin tautan" menyalin URL proyek dan menampilkan toast 2 detik | Should |
 | F19 | Label kursor "Lihat"/"View" mengikuti pointer saat hover kartu portofolio, hanya pada perangkat `pointer: fine` | Could |
 | F20 | Tombol utama WhatsApp di Ajakan kontak bersifat magnetic (bergeser maks. 12px ke arah kursor) pada `pointer: fine` | Could |
+| F21 | Bingkai showcase di hero bergantian menampilkan satu karya per kategori (featured, bila tidak ada yang terbaru), bisa dijeda, berhenti saat di-hover atau di luar layar, dan membuka Modal Proyek karya yang tampil saat diklik | Should |
 
 ## 8. Aturan dan batasan
 

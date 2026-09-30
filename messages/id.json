@@ -25,10 +25,12 @@
   },
   "hero": {
     "label": "Freelancer · Yogyakarta, Indonesia",
-    "title": "Saya membangun website, aplikasi, dan video AI.",
+    "title": "Saya membangun <web>website</web>, <mobile>aplikasi</mobile>, dan <video>video AI</video>.",
     "sub": "Developer web dengan 12+ tahun pengalaman. Kini juga memproduksi video dengan AI untuk brand lokal dan internasional.",
     "cta": "Lihat karya",
-    "scroll": "Scroll"
+    "scroll": "Scroll",
+    "pause": "Jeda animasi",
+    "play": "Putar animasi"
   },
   "services": {
     "label": "Layanan",

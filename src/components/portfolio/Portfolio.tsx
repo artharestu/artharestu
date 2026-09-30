@@ -237,7 +237,16 @@ export function Portfolio({ projects }: { projects: Project[] }) {
       if (btn) setIndicator({ x: btn.offsetLeft, w: btn.offsetWidth });
     };
     measure();
-    tabsRef.current?.querySelector<HTMLElement>(`[data-filter="${filter}"]`)?.scrollIntoView({ block: "nearest", inline: "nearest" });
+    // Keep the active tab visible in the horizontally scrolling bar (phones). Only the bar scrolls:
+    // scrollIntoView would also scroll the page down to the tabs as soon as it loads.
+    const bar = tabsRef.current?.parentElement;
+    const active = tabsRef.current?.querySelector<HTMLElement>(`[data-filter="${filter}"]`);
+    if (bar && active) {
+      const tab = active.getBoundingClientRect();
+      const view = bar.getBoundingClientRect();
+      if (tab.left < view.left) bar.scrollLeft -= view.left - tab.left + 16;
+      else if (tab.right > view.right) bar.scrollLeft += tab.right - view.right + 16;
+    }
     window.addEventListener("resize", measure);
     document.fonts?.ready.then(measure);
     return () => window.removeEventListener("resize", measure);

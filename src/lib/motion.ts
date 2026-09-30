@@ -1,14 +1,28 @@
 "use client";
 
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
+gsap.registerPlugin(SplitText, useGSAP);
 gsap.defaults({ ease: "power3.out" });
 
-export { gsap, ScrollTrigger, SplitText, useGSAP };
+export { gsap, SplitText, useGSAP };
+
+export type ScrollTriggerPlugin = typeof import("gsap/ScrollTrigger").ScrollTrigger;
+let scrollTrigger: Promise<ScrollTriggerPlugin> | null = null;
+
+/**
+ * ScrollTrigger (with its Observer) only drives the reveals below the hero, so it loads right after
+ * hydration instead of with the page. Every caller shares the same import.
+ */
+export function loadScrollTrigger() {
+  scrollTrigger ??= import("gsap/ScrollTrigger").then(({ ScrollTrigger }) => {
+    gsap.registerPlugin(ScrollTrigger);
+    return ScrollTrigger;
+  });
+  return scrollTrigger;
+}
 
 type FlipPlugin = typeof import("gsap/Flip").Flip;
 let flip: FlipPlugin | null = null;

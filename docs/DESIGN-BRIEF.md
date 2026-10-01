@@ -124,7 +124,7 @@ Kurva default: `power3.out` (GSAP) / `cubic-bezier(0.22, 1, 0.36, 1)` (CSS). Dur
 - **Modal:** buka → backdrop fade 200ms, panel `scale 0.96 → 1` + fade 300ms (sheet mobile: `yPercent 100 → 0`, 400ms). Tutup → kebalikan, 200ms. Konten modal (media, teks) fade stagger 60ms.
 - **Navbar saat scroll:** tinggi 64 → 52px, 250ms.
 - **Tombol magnetic (F20):** tombol WhatsApp di Ajakan kontak bergeser maks. 12px ke arah kursor dalam radius 120px, kembali 400ms `elastic.out(1, 0.5)`.
-- **Marquee tool:** geser horizontal konstan, satu putaran 40 detik, berhenti saat di-hover.
+- **Marquee tool:** geser horizontal konstan, ±2,7 detik per item (durasi satu putaran mengikuti jumlah item), berhenti saat di-hover.
 - **Ganti tema:** ikon matahari/bulan berputar + morph 300ms; warna transisi 200ms.
 - **Smooth scroll:** Lenis `lerp: 0.1`, terhubung ke `gsap.ticker`. Tidak ada scroll-snap atau section yang "membajak" scroll.
 - **Umpan balik aksi:**

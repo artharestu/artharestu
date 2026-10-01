@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import { Globe } from "lucide-react";
 import { getTranslations } from "next-intl/server";
@@ -5,21 +6,32 @@ import blur from "@/data/blur.generated.json";
 import { SectionHeading } from "./SectionHeading";
 
 const TOOLS = [
-  "Next.js",
-  "React",
+  "JavaScript",
   "TypeScript",
+  "React",
+  "Next.js",
   "Tailwind CSS",
+  "PHP",
+  "Laravel",
+  "Go",
+  "Python",
   "Flutter",
   "React Native",
-  "Supabase",
-  "Vercel",
-  "Figma",
+  "REST API",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Firebase",
   "Veo",
-  "Kling",
+  "Gemini Omni",
+  "Kling AI",
   "Seedance",
   "Nano Banana",
+  "GPT Image",
+  "Higgsfield",
+  "ElevenLabs",
   "CapCut",
-  "DaVinci Resolve",
+  "Prompt Engineering",
 ];
 
 const STATS = ["years", "fields", "clients"] as const;
@@ -64,19 +76,19 @@ export async function About() {
         </div>
       </div>
 
-      <div role="region" aria-label={t("toolsLabel")} className="marquee mt-16 overflow-hidden border-y border-line py-6 lg:mt-24">
+      <div role="region" aria-label={t("toolsLabel")} className="marquee mt-16 overflow-hidden border-y border-line py-4 lg:mt-24 lg:py-6">
         <ul className="sr-only">
           {TOOLS.map((tool) => (
             <li key={tool}>{tool}</li>
           ))}
         </ul>
-        <div aria-hidden className="marquee-track flex w-max">
+        <div aria-hidden className="marquee-track flex w-max" style={{ "--marquee-items": TOOLS.length } as CSSProperties}>
           {[0, 1].map((copy) => (
             <div key={copy} className="flex shrink-0 items-center">
               {TOOLS.map((tool) => (
-                <span key={tool} className="font-display flex items-center text-[28px] text-text-2 lg:text-[40px]">
-                  <span className="px-6 lg:px-8">{tool}</span>
-                  <span className="size-2 rounded-full bg-accent" />
+                <span key={tool} className="font-display flex items-center text-[18px] text-text-2 lg:text-[24px]">
+                  <span className="px-4 lg:px-6">{tool}</span>
+                  <span className="size-1.5 rounded-full bg-accent" />
                 </span>
               ))}
             </div>

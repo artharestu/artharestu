@@ -344,7 +344,7 @@ async function main() {
     await saveWebp(Buffer.from(videoCover(slug, palettes[slug])), path.join(dir, "cover.webp"));
   }
 
-  // About photo: square WebP; the subdued look is applied in CSS.
+  // About photo: square WebP; cropped to a round avatar in CSS.
   const photoSrc = path.join(ROOT, "docs", "images", "photo profile.jpg");
   await mkdir(path.join(ROOT, "public", "images"), { recursive: true });
   const photoOut = path.join(ROOT, "public", "images", "artha-restu.webp");

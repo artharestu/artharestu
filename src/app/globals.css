@@ -264,8 +264,9 @@
   }
 
   /* ——— Marquee ——— */
+  /* ~2.7s per item keeps the pace steady however long the list gets (--marquee-items is set on the track). */
   .marquee-track {
-    animation: marquee 40s linear infinite;
+    animation: marquee calc(var(--marquee-items, 15) * 2.7s) linear infinite;
   }
   .marquee:hover .marquee-track {
     animation-play-state: paused;

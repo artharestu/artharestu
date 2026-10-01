@@ -67,7 +67,7 @@ Pengunjung bisa membuka satu karya dan melihat preview-nya dalam ukuran besar (s
 
 ### Hero
 - **Tujuan:** menjelaskan dalam 5 detik siapa Artha dan apa yang dikerjakannya.
-- **Isi:** label kecil mono ("Freelancer · Yogyakarta, Indonesia"), judul besar, subjudul 1–2 kalimat, tombol "Lihat karya" / "See work", indikator scroll, dan bingkai showcase yang bergantian menampilkan satu karya unggulan per kategori (lihat `DESIGN-BRIEF.md` §5 dan §6).
+- **Isi:** label kecil mono ("Freelancer · Remote"), judul besar, subjudul 1–2 kalimat, tombol "Lihat karya" / "See work", indikator scroll, dan bingkai showcase yang bergantian menampilkan satu karya unggulan per kategori (lihat `DESIGN-BRIEF.md` §5 dan §6).
 - **Aksi tersedia:** "Lihat karya" → smooth scroll ke Portofolio. Klik bingkai showcase → Modal Proyek karya yang sedang tampil. Tombol jeda/putar → menghentikan atau melanjutkan animasi bingkai.
 - **Teks:** lihat `DESIGN-BRIEF.md` §7.
 - **Saat kosong / memuat / gagal / tanpa akses:** tidak berlaku. Teks harus terlihat walau JavaScript gagal dimuat (state awal animasi tidak boleh `opacity: 0` di HTML server).
@@ -104,7 +104,7 @@ Pengunjung bisa membuka satu karya dan melihat preview-nya dalam ukuran besar (s
 
 ### Tentang
 - **Tujuan:** membangun kepercayaan singkat.
-- **Isi:** paragraf bio (maks. 80 kata), angka ringkas ("12+ tahun menulis kode", "3 bidang layanan", "Klien lokal & internasional"), baris marquee tool/stack (Next.js, React, Tailwind, Flutter/React Native, Supabase, Vercel, serta tool video AI), lokasi Yogyakarta. Tanpa foto (lihat Pertanyaan terbuka); gunakan monogram "AR".
+- **Isi:** paragraf bio (maks. 80 kata), angka ringkas ("12+ tahun menulis kode", "3 bidang layanan", "Klien lokal & internasional"), baris marquee tool/stack (Next.js, React, Tailwind, Flutter/React Native, Supabase, Vercel, serta tool video AI), keterangan kerja remote. Tanpa foto (lihat Pertanyaan terbuka); gunakan monogram "AR".
 - **Saat kosong / memuat / gagal / tanpa akses:** tidak berlaku.
 
 ### Ajakan kontak + Footer
@@ -187,7 +187,7 @@ Tulis juga `summary.en` dan `description` dua bahasa untuk semua item. Set `feat
 - **Rendering:** semua halaman di-generate statis (SSG) untuk kedua locale.
 - **Perangkat:** mobile-first; diuji di lebar 360px, 768px, 1280px, dan 1920px.
 - **Aksesibilitas:** kontras teks minimal WCAG AA; semua elemen interaktif bisa dijangkau keyboard dengan focus ring terlihat; semua gambar punya `alt` dua bahasa (pakai judul + kategori bila tidak diisi).
-- **SEO:** `metadata` per locale, `hreflang` `id`/`en`/`x-default`, canonical, `sitemap.xml`, `robots.txt`, gambar Open Graph 1200×630 per locale, JSON-LD `Person` (nama "Artha Restu", `url` `https://artharestu.com`, `address` Yogyakarta).
+- **SEO:** `metadata` per locale, `hreflang` `id`/`en`/`x-default`, canonical, `sitemap.xml`, `robots.txt`, gambar Open Graph 1200×630 per locale, JSON-LD `Person` (nama "Artha Restu", `url` `https://artharestu.com`, tanpa alamat).
 - **Bahasa antarmuka:** Indonesia dan Inggris.
 
 ## 11. Stack

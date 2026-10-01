@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin } from "lucide-react";
+import { Globe } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import blur from "@/data/blur.generated.json";
 import { SectionHeading } from "./SectionHeading";
@@ -48,7 +48,7 @@ export async function About() {
             </div>
             <p className="max-w-[64ch] text-[20px] leading-[1.6] lg:text-[24px] lg:leading-[1.5]">{t("bio")}</p>
             <p className="meta mt-8 inline-flex items-center gap-2 text-text-2">
-              <MapPin aria-hidden strokeWidth={1.5} className="size-4" />
+              <Globe aria-hidden strokeWidth={1.5} className="size-4" />
               {t("location")}
             </p>
           </div>

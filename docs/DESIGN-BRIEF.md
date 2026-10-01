@@ -97,6 +97,8 @@ Maksimal tiga bobot font dalam satu layar, dan hanya ini: 600 (display), 500 (ju
 - **Portofolio:** tab filter di atas grid (bar yang bisa di-scroll horizontal di HP). Grid 3 kolom (≥ 1024px), 2 kolom (≥ 640px), 1 kolom (< 640px), gap 24px.
 - **Modal:** lihat PRD §6. Desktop dialog tengah maks. 1080px (media 60% / info 40%); < 768px sheet layar penuh dari bawah dengan handle 40×4px di atas.
 - **Tentang:** 2 kolom (bio 7 kolom, angka 5 kolom) di ≥ 1024px; marquee tool selebar layar di bawahnya.
+  - Foto profil bulat berwarna di atas bio: 112px (160px di ≥ 1024px), dalam cincin 1px `--line` berjarak 4px.
+  - Angka: tiap item bergaris atas `--line`, nilai `--accent-text`. Satu kolom di ≥ 1024px, tiga kolom sejajar di bawahnya.
 - **Ajakan kontak:** judul display sangat besar rata kiri, tombol WhatsApp di bawahnya.
 - **Layar sempit:** tautan navbar pindah ke menu layar penuh; tidak ada elemen yang hilang selain itu; tidak ada scroll horizontal di level halaman.
 

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Artha Restu — Websites, Mobile Apps & AI Video",
-    "description": "Portfolio of Artha Restu, a Yogyakarta-based freelancer building websites, mobile apps, and AI video for brands in Indonesia and abroad.",
+    "description": "Portfolio of Artha Restu, a freelancer building websites, mobile apps, and AI video for local and international brands.",
     "ogTagline": "Websites · Mobile Apps · AI Video"
   },
   "common": {
@@ -24,9 +24,9 @@
     "themeToLight": "Switch to light theme"
   },
   "hero": {
-    "label": "Freelancer · Yogyakarta, Indonesia",
+    "label": "Freelancer · Remote",
     "title": "I build <web>websites</web>, <mobile>apps</mobile>, and <video>AI videos</video>.",
-    "sub": "Web developer with 12+ years of experience, now also producing AI video for brands in Indonesia and abroad.",
+    "sub": "Web developer with 12+ years of experience, now also producing AI video for local and international brands.",
     "cta": "See work",
     "scroll": "Scroll",
     "pause": "Pause animation",
@@ -116,9 +116,9 @@
   "about": {
     "label": "About",
     "title": "About me",
-    "bio": "I'm Artha Restu, an informatics engineering graduate with 12+ years of experience building websites. Beyond websites and apps, I produce AI video for brands and creators. I work from Yogyakarta with clients in Indonesia and abroad.",
+    "bio": "I'm Artha Restu, an informatics engineering graduate with 12+ years of experience building websites. Beyond websites and apps, I produce AI video for brands and creators. I work remotely with local and international clients.",
     "photoAlt": "Photo of Artha Restu",
-    "location": "Yogyakarta, Indonesia",
+    "location": "Remote · open to clients anywhere",
     "stats": {
       "years": {
         "value": "12+",

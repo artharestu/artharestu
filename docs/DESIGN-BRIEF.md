@@ -144,7 +144,7 @@ Teks final (copy ini boleh diubah pemilik, tapi pakai persis ini dulu):
 
 | Lokasi | ID | EN |
 |---|---|---|
-| Hero label | Freelancer · Yogyakarta, Indonesia | Freelancer · Yogyakarta, Indonesia |
+| Hero label | Freelancer · Remote | Freelancer · Remote |
 | Hero judul | Saya membangun website, aplikasi, dan video AI. | I build websites, apps, and AI videos. |
 | Hero sub | Developer web dengan 12+ tahun pengalaman. Kini juga memproduksi video dengan AI untuk brand lokal dan internasional. | Web developer with 12+ years of experience, now also producing AI video for brands in Indonesia and abroad. |
 | Hero tombol | Lihat karya | See work |
@@ -159,7 +159,7 @@ Teks final (copy ini boleh diubah pemilik, tapi pakai persis ini dulu):
 | Portofolio judul | Karya pilihan | Selected work |
 | Tab filter | Semua · Website · Aplikasi Mobile · Video AI | All · Websites · Mobile Apps · AI Video |
 | Tentang judul | Tentang saya | About me |
-| Tentang bio | Saya Artha Restu, lulusan Teknik Informatika dengan 12+ tahun pengalaman membangun website. Selain website dan aplikasi, saya memproduksi video dengan AI untuk brand dan kreator. Saya bekerja dari Yogyakarta untuk klien di Indonesia dan luar negeri. | I'm Artha Restu, an informatics engineering graduate with 12+ years of experience building websites. Beyond websites and apps, I produce AI video for brands and creators. I work from Yogyakarta with clients in Indonesia and abroad. |
+| Tentang bio | Saya Artha Restu, lulusan Teknik Informatika dengan 12+ tahun pengalaman membangun website. Selain website dan aplikasi, saya memproduksi video dengan AI untuk brand dan kreator. Saya bekerja secara remote untuk klien lokal dan internasional. | I'm Artha Restu, an informatics engineering graduate with 12+ years of experience building websites. Beyond websites and apps, I produce AI video for brands and creators. I work remotely with local and international clients. |
 | Kontak judul | Punya proyek? Mari bicara. | Got a project? Let's talk. |
 | Kontak sub | Ceritakan ide Anda lewat WhatsApp. Satu pesan sudah cukup untuk memulai. | Tell me about your idea on WhatsApp. One message is enough to start. |
 | Kontak tombol | Chat WhatsApp | Chat on WhatsApp |

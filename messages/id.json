@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Artha Restu — Website, Aplikasi Mobile & Video AI",
-    "description": "Portofolio Artha Restu, freelancer di Yogyakarta: website, aplikasi mobile, dan video AI untuk brand di Indonesia dan luar negeri.",
+    "description": "Portofolio Artha Restu, freelancer website, aplikasi mobile, dan video AI untuk brand lokal dan internasional.",
     "ogTagline": "Website · Aplikasi Mobile · Video AI"
   },
   "common": {
@@ -24,7 +24,7 @@
     "themeToLight": "Ganti ke tema terang"
   },
   "hero": {
-    "label": "Freelancer · Yogyakarta, Indonesia",
+    "label": "Freelancer · Remote",
     "title": "Saya membangun <web>website</web>, <mobile>aplikasi</mobile>, dan <video>video AI</video>.",
     "sub": "Developer web dengan 12+ tahun pengalaman. Kini juga memproduksi video dengan AI untuk brand lokal dan internasional.",
     "cta": "Lihat karya",
@@ -116,9 +116,9 @@
   "about": {
     "label": "Tentang",
     "title": "Tentang saya",
-    "bio": "Saya Artha Restu, lulusan Teknik Informatika dengan 12+ tahun pengalaman membangun website. Selain website dan aplikasi, saya memproduksi video dengan AI untuk brand dan kreator. Saya bekerja dari Yogyakarta untuk klien di Indonesia dan luar negeri.",
+    "bio": "Saya Artha Restu, lulusan Teknik Informatika dengan 12+ tahun pengalaman membangun website. Selain website dan aplikasi, saya memproduksi video dengan AI untuk brand dan kreator. Saya bekerja secara remote untuk klien lokal dan internasional.",
     "photoAlt": "Foto Artha Restu",
-    "location": "Yogyakarta, Indonesia",
+    "location": "Remote · terbuka untuk klien di mana saja",
     "stats": {
       "years": {
         "value": "12+",

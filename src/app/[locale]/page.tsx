@@ -23,7 +23,6 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
     image: `${SITE_URL}/images/artha-restu.webp`,
     jobTitle: "Freelance Web, Mobile & AI Video Developer",
     description: tm("description"),
-    address: { "@type": "PostalAddress", addressLocality: "Yogyakarta", addressCountry: "ID" },
   };
 
   return (

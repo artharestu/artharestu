@@ -7,6 +7,26 @@ import { parseProjects, type ProjectInput } from "./schema";
 const data: ProjectInput[] = [
   // ——— Website ———
   {
+    slug: "surya-berkat-abadi",
+    category: "web",
+    title: "CV. Surya Berkat Abadi",
+    summary: {
+      id: "Company profile supplier kompresor udara, water treatment, pompa, dan genset industri di Surabaya.",
+      en: "Company profile for a Surabaya supplier of industrial air compressors, water treatment, pumps, and generator sets.",
+    },
+    description: {
+      id: "CV. Surya Berkat Abadi memasok peralatan industri sekaligus mengerjakan instalasinya sejak 2011. Saya membangun situs dua bahasa dengan halaman per solusi dan merek rekanan, artikel teknis, unduhan company profile, dan formulir permintaan penawaran yang langsung masuk ke email. Setiap halaman di-prerender menjadi HTML statis dengan metadata sendiri agar mudah ditemukan di Google.",
+      en: "CV. Surya Berkat Abadi has supplied industrial equipment and handled its installation since 2011. I built a bilingual site with pages for each solution and partner brand, technical articles, company profile downloads, and a request-for-quote form that lands straight in their inbox. Every page is prerendered to static HTML with its own metadata, so it is easy to find on Google.",
+    },
+    year: 2026,
+    role: { id: "Desain & development", en: "Design & development" },
+    tags: ["React", "Tailwind CSS", "SEO", "i18n", "Vite"],
+    cover: "/portfolio/surya-berkat-abadi/cover.webp",
+    gallery: ["/portfolio/surya-berkat-abadi/01.webp"],
+    links: { live: "https://www.suryaberkatabadi.com" },
+    order: 0,
+  },
+  {
     slug: "kopi-lereng",
     category: "web",
     title: "Kopi Lereng",

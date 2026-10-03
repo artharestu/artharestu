@@ -1,7 +1,7 @@
 "use client";
 
 import type { MouseEvent } from "react";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight, CalendarDays, Play } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import type { Project } from "@/data/schema";
 import type { Locale } from "@/i18n/routing";
@@ -71,10 +71,17 @@ export function ProjectCard({ project, hidden, priority, onOpen }: Props) {
         </span>
 
         <span className="flex flex-wrap items-center gap-2 px-2 pb-2 pt-4">
-          <span className="meta text-text-2">{project.year}</span>
-          {project.tags.slice(0, 3).map((tag) => (
-            <TagChip key={tag.name} tag={tag} />
-          ))}
+          <span className="chip theme-t">
+            <CalendarDays aria-hidden strokeWidth={1.5} />
+            {project.year}
+          </span>
+          {/* Only tags with a logo or icon make the card; the modal lists them all. */}
+          {project.tags
+            .filter((tag) => tag.logo || tag.icon)
+            .slice(0, 3)
+            .map((tag) => (
+              <TagChip key={tag.label.en} tag={tag} />
+            ))}
         </span>
       </a>
     </li>

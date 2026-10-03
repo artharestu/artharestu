@@ -81,7 +81,7 @@ Pengunjung bisa membuka satu karya dan melihat preview-nya dalam ukuran besar (s
 ### Portofolio
 - **Tujuan:** menampilkan semua karya dengan filter kategori.
 - **Isi:** judul section, tab filter (Semua / Website / Aplikasi Mobile / Video AI, dengan jumlah item per tab), grid kartu.
-- **Kartu:** media cover rasio 4:3 (`object-cover`), badge kategori, judul, tahun, maksimal 3 tag. Kartu video memakai thumbnail YouTube + ikon play + badge "Vertikal"/"Vertical" bila `aspect` = `9:16`.
+- **Kartu:** media cover rasio 4:3 (`object-cover`), badge kategori, judul, tahun, maksimal 3 tag yang punya logo atau ikon (tag tanpa simbol hanya tampil di modal; label tag mengikuti bahasa halaman). Kartu video memakai thumbnail YouTube + ikon play + badge "Vertikal"/"Vertical" bila `aspect` = `9:16`.
 - **Aksi tersedia:** klik tab → filter + animasi susun ulang; klik kartu / `Enter` saat fokus → buka Modal Proyek.
 - **Urutan:** item `featured: true` duluan, lalu `year` terbaru, lalu `order`.
 - **Saat kosong (filter tanpa hasil):** judul "Belum ada karya di kategori ini", penjelas "Karya baru sedang disiapkan. Coba lihat kategori lain.", tombol "Lihat semua". (EN: "Nothing here yet" / "New work is on the way. Try another category." / "See all")

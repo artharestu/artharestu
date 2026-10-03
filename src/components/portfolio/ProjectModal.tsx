@@ -193,7 +193,7 @@ export function ProjectModal({ project, open, position, onRequestClose, onExited
                 <h3 className="sr-only">{t("tags")}</h3>
                 <ul className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <li key={tag.name} className="flex">
+                    <li key={tag.label.en} className="flex">
                       <TagChip tag={tag} className="chip-lg" />
                     </li>
                   ))}

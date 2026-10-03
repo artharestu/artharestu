@@ -31,7 +31,8 @@ Satu warna aksen: **lime #C8FF3D**. Semua token didefinisikan sebagai CSS variab
 Aturan:
 - Lime **tidak pernah** dipakai sebagai warna teks di tema terang; gunakan `--accent-text`.
 - Tidak ada warna aksen kedua. Pembeda sekunder memakai kepekatan (`--text-2`) atau ukuran.
-- Pengecualian: chip tag teknologi di kartu dan modal portofolio memakai warna brand masing-masing — logo berwarna penuh di kiri nama, isi 16% / 10% dan garis 32% / 28% (gelap / terang) dari warna brand. Logo hitam memakai warna teks; chip-nya, seperti tag tanpa logo, memakai tint `--text-2`. Daftar logo dan warna: `src/data/tech.ts`.
+- Pengecualian: chip tag teknologi di kartu dan modal portofolio memakai warna brand masing-masing — logo berwarna penuh di kiri nama, isi 16% / 10% dan garis 32% / 28% (gelap / terang) dari warna brand. Logo hitam memakai warna teks; chip-nya, seperti tag lain, memakai tint `--text-2`. Daftar logo dan warna: `src/data/tech.ts`.
+- Tag lain (fitur, format, jenis konten) dan tahun memakai ikon Lucide di chip netral; ikon dan label ID/EN-nya di `src/data/tags.ts`. Kartu hanya menampilkan chip tahun + maks. 3 tag yang punya logo atau ikon; modal menampilkan semua tag.
 - Transisi warna saat ganti tema: `background-color`, `color`, `border-color` 200ms; properti lain tidak ditransisikan.
 
 ### Glass (hanya untuk navbar, kartu Layanan, Modal, dan toast)
@@ -62,7 +63,7 @@ Semua dari Google Fonts lewat `next/font/google`:
 - **Display (judul hero dan section):** Unbounded — bobot 600. `letter-spacing: -0.02em`, `line-height: 1.0`
 - **Isi:** Geist — bobot 400 dan 500. `line-height: 1.6`
 - **Label/meta (tahun, nomor section, kategori):** Geist Mono — bobot 400, huruf kapital, `letter-spacing: 0.08em`, 12px
-- **Chip tag:** Geist 500, huruf sesuai penulisan aslinya, 12px di kartu / 14px di modal
+- **Chip tag:** Geist 500, huruf sesuai penulisan aslinya, 12px di kartu / 14px di modal, label mengikuti bahasa halaman
 
 Skala (px): 12 / 14 / 16 / 18 / 24 / 32 / 48 / 64
 - Judul hero: `clamp(36px, 7vw, 96px)`
@@ -182,7 +183,7 @@ Bawaan:
 - Kalimat pembuka generik: "Selamat datang di...", "Solusi terbaik untuk...", "Wujudkan impian digital Anda"
 - Label "AI-powered" atau sejenisnya
 - Bobot font di luar 400 / 500 / 600, atau lebih dari tiga bobot dalam satu layar
-- Ikon dan teks yang menyampaikan hal sama persis berdampingan (kecuali logo di chip tag teknologi, §2)
+- Ikon dan teks yang menyampaikan hal sama persis berdampingan (kecuali logo dan ikon di chip tag, §2)
 - Animasi pada elemen yang tidak sedang berubah status (kecuali blob latar, marquee, dan bingkai showcase di hero)
 - Halaman kosong tanpa penjelasan langkah berikutnya
 

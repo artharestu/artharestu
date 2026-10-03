@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { categories } from "./categories";
-import { toTag } from "./tech";
+import { toTag } from "./tags";
 
 export type { Category } from "./categories";
-export type { ProjectTag } from "./tech";
+export type { ProjectTag } from "./tags";
 
 const https = z.string().url().startsWith("https://", "must start with https://");
 const localized = (max: number) => z.object({ id: z.string().min(1).max(max), en: z.string().min(1).max(max) });

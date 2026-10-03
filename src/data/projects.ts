@@ -22,12 +22,7 @@ const data: ProjectInput[] = [
     role: { id: "Desain & development", en: "Design & development" },
     tags: ["React", "Tailwind CSS", "SEO", "i18n", "Vite"],
     cover: "/portfolio/surya-berkat-abadi/cover.webp",
-    gallery: [
-      "/portfolio/surya-berkat-abadi/01.webp",
-      "/portfolio/surya-berkat-abadi/02.webp",
-      "/portfolio/surya-berkat-abadi/03.webp",
-      "/portfolio/surya-berkat-abadi/04.webp",
-    ],
+    gallery: ["/portfolio/surya-berkat-abadi/01.webp"],
     links: { live: "https://www.suryaberkatabadi.com" },
     order: 0,
   },

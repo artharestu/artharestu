@@ -20,6 +20,8 @@
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   --blob-opacity: 0.2;
   --grain-opacity: 0.03;
+  --chip-fill: 10%;
+  --chip-edge: 28%;
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --nav-h: 64px;
@@ -40,6 +42,8 @@
   --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.06);
   --blob-opacity: 0.12;
   --grain-opacity: 0.04;
+  --chip-fill: 16%;
+  --chip-edge: 32%;
   color-scheme: dark;
 }
 
@@ -248,6 +252,49 @@
   .btn-primary:hover .arrow,
   .link:hover .arrow {
     transform: translate(2px, -2px);
+  }
+
+  /* ——— Tag chips (portfolio card + modal) ——— */
+  /* A tech tag sets its brand colour per theme (--tone-light / --tone-dark, see src/data/tech.ts): it tints
+     the fill and edge and colours the logo. Other tags, and black logos, fall back to neutral greys. */
+  .chip {
+    --tone: var(--tone-light);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border: 1px solid var(--line);
+    border-radius: 9999px;
+    color: var(--text);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+  /* Without color-mix() the chip keeps the plain outline above, never a solid brand fill under the text. */
+  @supports (color: color-mix(in srgb, red, red)) {
+    .chip {
+      border-color: color-mix(in srgb, var(--tone, var(--text-2)) var(--chip-edge), transparent);
+      background-color: color-mix(in srgb, var(--tone, var(--text-2)) var(--chip-fill), transparent);
+    }
+  }
+  .dark .chip {
+    --tone: var(--tone-dark);
+  }
+  .chip svg {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    color: var(--tone, currentColor);
+  }
+  .chip-lg {
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  .chip-lg svg {
+    width: 16px;
+    height: 16px;
   }
 
   /* ——— Background ornament ——— */

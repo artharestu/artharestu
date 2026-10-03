@@ -8,6 +8,7 @@ import type { Locale } from "@/i18n/routing";
 import { gsap, prefersReducedMotion } from "@/lib/motion";
 import { lockScroll, unlockScroll } from "@/lib/scroll";
 import { Gallery } from "./Gallery";
+import { TagChip } from "./TagChip";
 import { VideoPlayer } from "./VideoPlayer";
 
 type Props = {
@@ -192,8 +193,8 @@ export function ProjectModal({ project, open, position, onRequestClose, onExited
                 <h3 className="sr-only">{t("tags")}</h3>
                 <ul className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
-                    <li key={tag} className="meta rounded-full border border-line px-3 py-1.5 text-text-2">
-                      {tag}
+                    <li key={tag.name} className="flex">
+                      <TagChip tag={tag} className="chip-lg" />
                     </li>
                   ))}
                 </ul>

@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import type { Project } from "@/data/schema";
 import type { Locale } from "@/i18n/routing";
 import { CoverImage } from "./CoverImage";
+import { TagChip } from "./TagChip";
 
 type Props = {
   project: Project;
@@ -72,9 +73,7 @@ export function ProjectCard({ project, hidden, priority, onOpen }: Props) {
         <span className="flex flex-wrap items-center gap-2 px-2 pb-2 pt-4">
           <span className="meta text-text-2">{project.year}</span>
           {project.tags.slice(0, 3).map((tag) => (
-            <span key={tag} className="meta rounded-full border border-line px-2.5 py-1 text-text-2">
-              {tag}
-            </span>
+            <TagChip key={tag.name} tag={tag} />
           ))}
         </span>
       </a>

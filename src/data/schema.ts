@@ -1,7 +1,9 @@
 import { z } from "zod";
 import { categories } from "./categories";
+import { toTag } from "./tech";
 
 export type { Category } from "./categories";
+export type { ProjectTag } from "./tech";
 
 const https = z.string().url().startsWith("https://", "must start with https://");
 const localized = (max: number) => z.object({ id: z.string().min(1).max(max), en: z.string().min(1).max(max) });
@@ -16,7 +18,7 @@ const projectSchema = z
     description: localized(400),
     year: z.number().int().min(2000).max(2100),
     role: localized(60).optional(),
-    tags: z.array(z.string().min(1)).max(5),
+    tags: z.array(z.string().min(1)).max(5).transform((tags) => tags.map(toTag)),
     cover: z.string().startsWith("/portfolio/").optional(),
     gallery: z.array(z.string().startsWith("/portfolio/")).optional(),
     youtubeUrl: https.nullable().optional(),

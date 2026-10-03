@@ -21,6 +21,7 @@ npm run lint
 | Daftar proyek | `src/data/projects.ts` (divalidasi zod saat build; data salah → build gagal dengan slug + field yang salah) |
 | Teks UI | `messages/id.json`, `messages/en.json` |
 | Daftar tool di section Tentang | `TOOLS` di `src/components/About.tsx` |
+| Logo & warna tag teknologi | `src/data/tech.ts` (tag yang cocok dengan nama/alias di sini tampil dengan logo; tag lain tampil netral) |
 | Nomor & pesan WhatsApp | `src/lib/site.ts`, `common.whatsappMessage` di file messages |
 | Foto profil | `public/images/artha-restu.webp` (dibuat dari `docs/images/photo profile.jpg`) |
 

@@ -32,6 +32,8 @@ Isi `youtubeUrl` pada item video di `src/data/projects.ts`. Format `watch?v=`, `
 
 Simpan di `public/portfolio/<slug>/` (WebP/AVIF, lebar ≤ 2400px, ≤ 400KB). Gambar mockup untuk data contoh dibuat oleh `npm run assets` (`scripts/generate-assets.mjs`), yang juga membuat blur placeholder di `src/data/blur.generated.json`. Setelah menambah gambar sendiri, jalankan ulang `npm run assets` agar blur placeholder-nya ikut dibuat — atau hapus entri mockup dari skrip bila sudah tidak diperlukan.
 
+Saat mengganti gambar yang sudah tayang, simpan dengan nama file baru (mis. `cover-en.webp`), jangan menimpa file lama: hasil optimasi gambar di-cache browser dan CDN minimal 4 jam per URL (default `minimumCacheTTL` Next.js 16), jadi file yang ditimpa bisa tetap tampil versi lamanya.
+
 ## Catatan teknis
 
 - Routing bahasa ada di `src/proxy.ts` (next-intl): `/` → `/id` bila `Accept-Language` mengandung `id`, selain itu `/en`; cookie `NEXT_LOCALE` diutamakan.
